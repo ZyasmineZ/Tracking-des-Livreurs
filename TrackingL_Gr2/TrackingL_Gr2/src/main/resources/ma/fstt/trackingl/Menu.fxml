@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-image: url('Background.png');" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.MenuController">
+   <children>
+      <Button fx:id="liv" mnemonicParsing="false" onAction="#afficherLivreurs" prefHeight="67.0" prefWidth="152.0" style="-fx-background-color: white;" text="Livreurs" translateX="200.0" translateY="500.0">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="prod" mnemonicParsing="false" onAction="#afficherProduits" prefHeight="69.0" prefWidth="167.0" style="-fx-background-color: white;" text="Produits" translateX="400.0" translateY="500.0">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="com" mnemonicParsing="false" onAction="#afficherCommandes" prefHeight="68.0" prefWidth="157.0" style="-fx-background-color: white;" text="Commandes" translateX="600.0" translateY="500.0">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+   </children>
+</HBox>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: ffcd1b;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.CommandeController">
+   <children>
+      <Label layoutX="521.0" layoutY="33.0" text="Commandes ">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="131.0" text="ID produit :" />
+      <TextField fx:id="id_produit" layoutX="155.0" layoutY="127.0" prefHeight="24.0" prefWidth="221.0" />
+      <Label layoutX="50.0" layoutY="196.0" text="ID livreur :" />
+      <TextField fx:id="id_livreur" layoutX="155.0" layoutY="192.0" prefHeight="24.0" prefWidth="221.0" />
+      <Label layoutX="50.0" layoutY="266.0" text="Date :" />
+      <TextField fx:id="date" layoutX="155.0" layoutY="262.0" prefHeight="24.0" prefWidth="221.0" />
+      <Label layoutX="47.0" layoutY="346.0" text="Adresse :" />
+      <TextField fx:id="adresse" layoutX="155.0" layoutY="335.0" prefHeight="87.0" prefWidth="221.0" />
+      <Button fx:id="ok" layoutX="47.0" layoutY="463.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: green;" text="save" />
+      <Button fx:id="modifier" layoutX="197.0" layoutY="463.0" mnemonicParsing="false" onAction="#onUpdateButtonClick" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: orange;" text="Modifier" />
+      <Button fx:id="supprimer" layoutX="47.0" layoutY="598.0" mnemonicParsing="false" onAction="#onDeleteButtonClick" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: red;" text="Supprimer" />
+      <Button fx:id="annuler" layoutX="47.0" layoutY="531.0" mnemonicParsing="false" onAction="#reset" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: skyblue;" text="Annuler" />
+      <Button fx:id="menu" layoutX="197.0" layoutY="531.0" mnemonicParsing="false" onAction="#afficherMenu" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: white;" text="Menu" />
+      <TableView fx:id="tabcom" layoutX="548.0" layoutY="127.0" onMousePressed="#tableClick" prefHeight="454.0" prefWidth="707.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="44.0" text="id" />
+          <TableColumn fx:id="col_id_produit" prefWidth="138.0" text="id produit" />
+            <TableColumn fx:id="col_id_livreur" prefWidth="104.0" text="id livreur" />
+            <TableColumn fx:id="col_date" prefWidth="119.0" text="date" />
+            <TableColumn fx:id="col_adresse" prefWidth="300.0" text="adresse" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
